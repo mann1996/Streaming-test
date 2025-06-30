@@ -37,7 +37,7 @@ const UserStoryGenerator: React.FC = () => {
   const [hasData, setHasData] = useState(false);
 
   const [streamingState, streamingActions] = useStreamingResponse<StreamedObject>({
-    url: "http://localhost:8383/api/genai/generate-user-story",
+    url: "http://localhost:8080/api/genai/generate-user-story",
     method: "POST",
     credentials: "include",
     body: formData,

@@ -44,7 +44,7 @@ const FigmaCodeGenerator: React.FC = () => {
   const [hasData, setHasData] = useState(false);
 
   const [streamingState, streamingActions] = useStreamingResponse<StreamedObject>({
-    url: "http://localhost:8383/api/genai/generate/code",
+    url: "http://localhost:8080/api/genai/generate/code",
     method: "POST",
     credentials: "include",
     body: formData,
